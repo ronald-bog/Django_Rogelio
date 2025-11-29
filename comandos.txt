@@ -2,4 +2,6 @@ pip install django = Instalar
 
 django-admin --version = Consultar version
 
-django-admin startproject prueba . = inicializar un proyecto
+django-admin startproject proyecto . = inicializar un proyecto
+
+python manage.py startapp pruebas
