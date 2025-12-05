@@ -4,4 +4,6 @@ django-admin --version = Consultar version
 
 django-admin startproject proyecto . = inicializar un proyecto
 
-python manage.py startapp pruebas
+python manage.py startapp pruebas = crear app
+
+python manage.py runserver = ejecutar proyecto
