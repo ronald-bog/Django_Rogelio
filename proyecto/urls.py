@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', views.saludar),
     path('suma/', views.sumar),
+    path('multi/<int:n1>/<int:n2>/<int:numero3>/', views.multiplicar),
+    path('sumaqp/', views.sumaqp),
     re_path(r'^.*$', views.notFound) #Para manejo de rutas no existentes
 ]
 
