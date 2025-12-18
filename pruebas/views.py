@@ -6,6 +6,21 @@ from django.http import HttpResponse
 def saludar(request):
     return HttpResponse('!!! Nuestra primera aplicacion con Django !!!')
 
+def saludarApp(request):
+    return HttpResponse('!!! Desde una ruta propia de la APP - pruebas !!!')
+
+def saludarApp2(request):
+    return HttpResponse('!!! Desde una ruta propia de la APP - pruebas 2 !!!')
+
+def saludarApp3(request):
+    return HttpResponse('!!! Desde una ruta propia de la APP - pruebas 3 !!!')
+
+def saludarApp4(request):
+    return HttpResponse('!!! Desde una ruta propia de la APP - pruebas 4 !!!')
+
+def saludarApp5(request):
+    return HttpResponse('!!! Desde una ruta propia de la APP - pruebas 5 !!!')
+
 def sumar(request):
     n1 = 10
     n2 = 15

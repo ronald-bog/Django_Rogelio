@@ -15,8 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import path, re_path, include
 from pruebas import views
+import pruebas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +25,10 @@ urlpatterns = [
     path('suma/', views.sumar),
     path('multi/<int:n1>/<int:n2>/<int:numero3>/', views.multiplicar),
     path('sumaqp/', views.sumaqp),
+    path('', include('pruebas.urls')), # el argumento del include se pasa como un string ('').
+    # path('', include('usuarios.urls')),
+    # path('', include('productos.urls')),
+    # path('', include('categorias.urls')),
     re_path(r'^.*$', views.notFound) #Para manejo de rutas no existentes
 ]
 
