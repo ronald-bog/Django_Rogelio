@@ -7,3 +7,10 @@ django-admin startproject proyecto . = inicializar un proyecto
 python manage.py startapp pruebas = crear app
 
 python manage.py runserver = ejecutar proyecto
+
+# importante importar en archivo __init__.py de la carpeta principal
+import pymysql
+pymysql.install_as_MySQLdb()
+
+# para realizar migraciones iniciales (no afecta la base de datos)
+ python manage.py makemigrations

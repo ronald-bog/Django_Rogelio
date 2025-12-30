@@ -2,14 +2,14 @@ from django.db import models
 
 # Modelo para la tabla 'Category'
 class Category(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=40)
 
     def __str__(self):
         return self.name
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=90)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.IntegerField()
     active = models.BooleanField(default=True)
