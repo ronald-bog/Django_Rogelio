@@ -14,3 +14,5 @@ pymysql.install_as_MySQLdb()
 
 # para realizar migraciones iniciales (no afecta la base de datos)
  python manage.py makemigrations
+
+ python manage.py migrate
