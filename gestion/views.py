@@ -78,5 +78,22 @@ def product_update_patch(request, id):
     return JsonResponse({'message': 'Producto actualizado exitosamente'})
 
 
-#
+# ELIMINAR PRODUCTO (DELETE)
+@csrf_exempt
+def deleteProduct(request, id):
+    # validacion del metodo usado en la peticion
+    if request.method != 'DELETE':
+        return JsonResponse({'error': 'Metodo no es valido'})
+
+    product = get_object_or_404(Product, pk=id) # aqui se obtiene el producto, mas no se borra aun
+
+    product.delete() # aqui se borra el producto
+
+    return JsonResponse({'mensaje': 'Producto eliminado con exito'}) # se envia la respuesta al cliente (usuario) o a quien hizo la peticion
+
+
+
+
+
+
 
