@@ -9,7 +9,8 @@ urlpatterns = [
     #path('multi/<int:n1>/<int:n2>/<int:numero3>/', views.multiplicar),
     #path('sumaqp/', views.sumaqp),
     path('', include('pruebas.urls')), # el argumento del include se pasa como un string ('').
-    path('api/', include('gestion.urls'))
+    path('api/', include('gestion.urls')),
+    path('', include('gestion.urls_templates')),
     # path('', include('usuarios.urls')),
     # path('', include('productos.urls')),
     # path('', include('categorias.urls')),
