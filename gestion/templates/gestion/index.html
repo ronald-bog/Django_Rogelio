@@ -1,10 +1,31 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'gestion/styles.css' %}">
 </head>
 <body>
-    <h1>Esto es un Template</h1>
+<h1>Esto es un Template</h1>
+<h2>{{ estudiante }}</h2>
+
+<form action="">
+    <label>Nombre del Producto</label>
+    <input type="text">
+    <label>Precio</label>
+    <input type="text">
+    <label>Stock</label>
+    <input type="text">
+    <label>Activo</label>
+    <input type="checkbox">
+    <label>Categoria</label>
+    <select name="opciones" id="opciones">
+        <option value="1">Celulares</option>
+        <option value="2">Laptops</option>
+        <option value="3">Teclados</option>
+    </select>
+</form>
+
 </body>
 </html>
