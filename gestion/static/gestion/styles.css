@@ -1,7 +1,35 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
 h1{
     color: red;
+
 }
+
+
+.tercero{
+    color: blue;
+}
+
+.formulario{
+    background-color: #fbf8ff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 1px 1px 2px #eeeeee ;
+    padding: 20px;
+}
+
 
 h2{
     color: green;
 }
+
