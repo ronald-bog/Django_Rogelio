@@ -20,3 +20,36 @@ def pasarDatos(request):
     #     print(nombre['opciones'])
 
     return render(request,'gestion/index.html', datos)
+
+
+def demoMotor(request):
+    data = {
+        'activo': False,
+        'nombres': ['Sofia','Rogelio','Carlos','Ana','Oscar','Vicente','Michael','Steve']
+    }
+    return render(request, 'gestion/motor.html',data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

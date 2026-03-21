@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motor de Plantillas</title>
+</head>
+<body>
+<h1>Motor de plantillas</h1>
+{# Sintaxis DTL para if #}
+{% if activo %}
+    <p>Esto es del bloque del if...</p>
+    <h3>Esto es un h3**</h3>
+    <input type="text">
+{% endif %}
+
+{# Sintaxis DTL para for #}
+{% for i in nombres %}
+    <p>{{i}}</p>
+{% endfor %}
+
+</body>
+</html>
+
