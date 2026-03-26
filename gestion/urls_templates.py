@@ -6,5 +6,6 @@ urlpatterns = [
     path('saludo', saludo),
     path('datos', pasarDatos),
     path('motor', demoMotor),
+    path('create/', create),
 
 ]

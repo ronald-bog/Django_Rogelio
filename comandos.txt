@@ -12,6 +12,8 @@ python manage.py runserver = ejecutar proyecto
 import pymysql
 pymysql.install_as_MySQLdb()
 
+# La otra libreria seria mysqlclient * Aveces pone problema por la librerias o sdk que tenga en el sistema operativo
+
 # para realizar migraciones iniciales (no afecta la base de datos)
  python manage.py makemigrations
 

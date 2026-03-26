@@ -10,25 +10,31 @@
 
 <div class="container">
 
-
     <div class="formulario">
         <h1>Esto es un Template</h1>
         <h2>{{ estudiante }}</h2>
-        <form action="">
+
+        <form method="POST" action="/create/">
+            {% csrf_token %}
             <label>Nombre del Producto</label>
-            <input type="text">
+            <input type="text" name="nombre">
+
             <label>Precio</label>
-            <input type="text">
+            <input type="text" name="precio">
+
             <label>Stock</label>
-            <input type="text">
+            <input type="text" name="stock">
+
             <label>Activo</label>
-            <input type="checkbox">
+            <input type="checkbox" name="activo">
+
             <label>Categoria</label>
             <select name="opciones" id="opciones">
                 <option value="1">Celulares</option>
                 <option value="2">Laptops</option>
                 <option value="3">Teclados</option>
             </select>
+            <button type="submit">ENVIAR</button>
         </form>
     </div>
 </div>
